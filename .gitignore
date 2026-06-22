@@ -1,0 +1,6 @@
+# Public marketing repo — keep it clean. No build artifacts, no env, no secrets.
+.env
+.dev.vars
+node_modules/
+*.log
+.DS_Store
