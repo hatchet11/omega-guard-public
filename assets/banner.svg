@@ -1,0 +1,30 @@
+<svg width="1280" height="340" viewBox="0 0 1280 340" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Omega Guard — Verified Business status and clone-site defense">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#0f1b2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.16" cy="0.5" r="0.55">
+      <stop stop-color="#1e3a5f" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0b1220" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="340" rx="18" fill="url(#bg)"/>
+  <rect width="1280" height="340" rx="18" fill="url(#glow)"/>
+  <g stroke="#20344c" stroke-width="1.5" fill="none" opacity="0.55">
+    <circle cx="212" cy="170" r="122"/>
+    <circle cx="212" cy="170" r="93"/>
+    <circle cx="212" cy="170" r="64"/>
+  </g>
+  <path d="M212 76 L290 107 V176 C290 221 255 254 212 270 C169 254 134 221 134 176 V107 Z" fill="#0e1a2b" stroke="url(#accent)" stroke-width="3"/>
+  <text x="212" y="206" font-family="Georgia, 'Times New Roman', serif" font-size="124" fill="url(#accent)" text-anchor="middle" font-weight="700">&#937;</text>
+  <text x="362" y="150" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="78" fill="#f8fafc" font-weight="800" letter-spacing="2">OMEGA GUARD</text>
+  <text x="364" y="204" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="27" fill="#9fb3c8" font-weight="500">Verified Business status &#183; clone &amp; impostor-site defense</text>
+  <rect x="364" y="232" width="556" height="2" fill="#20344c"/>
+  <text x="364" y="270" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#64829e" font-weight="500" letter-spacing="1">OMEGA POINT SOLUTIONS LLC</text>
+  <text x="690" y="270" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#3fae7a" font-weight="600" letter-spacing="1">&#183; SDVOSB</text>
+</svg>

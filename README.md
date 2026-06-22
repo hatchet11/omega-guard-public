@@ -1,3 +1,13 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Omega Guard" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://guard.omegapointsolutions.com"><img src="https://img.shields.io/badge/verify%20a%20business-guard.omegapointsolutions.com-38bdf8" alt="verify a business"></a>
+  <img src="https://img.shields.io/badge/by-Omega%20Point%20Solutions%20LLC-0b1220" alt="by Omega Point Solutions LLC">
+  <img src="https://img.shields.io/badge/SDVOSB-Veteran%20Owned-2e7d32" alt="SDVOSB — Veteran Owned">
+</p>
+
 # Omega Guard™
 
 **Consumer protection and brand integrity — verify the real business, shut down the fakes.**
@@ -54,5 +64,6 @@ Visit **[omegapointsolutions.com](https://omegapointsolutions.com)** or get in t
 
 ---
 
-© Omega Point Solutions LLC. "Omega Guard" is a trademark of Omega Point Solutions LLC.
-This repository contains public marketing information only. All product source is maintained privately.
+© 2026 Omega Point Solutions LLC. "Omega Guard" is a trademark of Omega Point Solutions LLC.
+This repository contains public marketing information only — all product source is maintained
+privately. See [`LICENSE`](LICENSE).
