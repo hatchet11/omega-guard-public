@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Omega Guard animated mark - preview & embed guide. (c) 2026 Omega Point Solutions LLC (proprietary). -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Omega Guard - animated mark</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+  :root{--bg:#0b1220;--bg2:#0f1b2e;--acc:#38bdf8;--acc2:#7dd3fc;--t0:#f8fafc;--t1:#cfe0f0;--t2:#8aa3bd;--line:rgba(56,189,248,.16)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',system-ui,sans-serif;background:radial-gradient(ellipse 90% 60% at 50% 0%,#11203400,#0b1220),var(--bg);color:var(--t1);min-height:100vh;padding:48px 24px}
+  .wrap{max-width:1040px;margin:0 auto}
+  .eyebrow{font:600 12px/1 'JetBrains Mono',monospace;letter-spacing:2px;text-transform:uppercase;color:var(--acc2)}
+  h1{color:var(--t0);font-size:34px;font-weight:900;letter-spacing:-1px;margin:12px 0 6px}
+  .lead{color:var(--t2);max-width:620px;margin-bottom:40px}
+  .panel{border:1px solid var(--line);border-radius:16px;background:linear-gradient(160deg,rgba(16,34,52,.6),rgba(10,22,38,.4));padding:30px;margin-bottom:22px}
+  .ptitle{font:700 12px 'JetBrains Mono',monospace;letter-spacing:1.5px;text-transform:uppercase;color:var(--acc2);margin-bottom:18px}
+  .sizes{display:flex;align-items:flex-end;gap:40px;flex-wrap:wrap}
+  .size{display:flex;flex-direction:column;align-items:center;gap:10px}
+  .size span{font:600 11px 'JetBrains Mono',monospace;color:var(--t2)}
+  .s160{width:160px;height:160px}.s72{width:72px;height:72px}.s40{width:40px;height:40px}.s28{width:28px;height:28px}
+  /* horizontal lockup */
+  .lockup{display:flex;align-items:center;gap:18px}
+  .lockup .mk{width:64px;height:64px}
+  .lockup .wm{line-height:1}
+  .lockup .wm .name{font-size:30px;font-weight:800;letter-spacing:2px;color:var(--t0)}
+  .lockup .wm .tag{font:600 12px 'JetBrains Mono',monospace;letter-spacing:.5px;color:var(--t2);margin-top:6px}
+  /* nav demo */
+  .navdemo{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:12px;padding:14px 18px;background:rgba(11,18,32,.6)}
+  .navbrand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.4px;color:var(--t0);font-size:18px}
+  .navbrand .mk{width:34px;height:34px}
+  .navcta{font:600 13px 'JetBrains Mono',monospace;color:var(--t2);border:1px solid var(--line);padding:8px 14px;border-radius:9px}
+  pre{background:#060c16;border:1px solid var(--line);border-radius:10px;padding:16px;overflow:auto;color:#bfe0ff;font:500 12.5px/1.6 'JetBrains Mono',monospace}
+  code{color:var(--acc2)}
+  .note{color:var(--t2);font-size:13px;margin-top:12px}
+  a{color:var(--acc2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Omega Point Solutions &middot; brand asset</div>
+  <h1>Omega Guard animated mark</h1>
+  <p class="lead">One self-contained SVG. It animates as an inline element, an <code>&lt;img&gt;</code>, or a favicon, and stays crisp at every size. Drop it into omegapointsolutions.com.</p>
+
+  <div class="panel">
+    <div class="ptitle">The mark at real sizes</div>
+    <div class="sizes">
+      <div class="size"><img class="s160" src="logo-animated.svg" alt="Omega Guard mark 160"><span>hero / 160</span></div>
+      <div class="size"><img class="s72" src="logo-animated.svg" alt="Omega Guard mark 72"><span>card / 72</span></div>
+      <div class="size"><img class="s40" src="logo-animated.svg" alt="Omega Guard mark 40"><span>nav / 40</span></div>
+      <div class="size"><img class="s28" src="logo-animated.svg" alt="Omega Guard mark 28"><span>favicon / 28</span></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="ptitle">Horizontal lockup</div>
+    <div class="lockup">
+      <img class="mk" src="logo-animated.svg" alt="Omega Guard">
+      <div class="wm">
+        <div class="name">OMEGA GUARD</div>
+        <div class="tag">Verified Business &middot; clone &amp; impostor defense</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="ptitle">In a nav bar</div>
+    <div class="navdemo">
+      <div class="navbrand"><img class="mk" src="logo-animated.svg" alt="Omega Guard">Omega Guard</div>
+      <span class="navcta">Verify a business</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="ptitle">Embed it</div>
+    <pre>&lt;!-- as an image (animates on its own) --&gt;
+&lt;img src="/assets/logo-animated.svg" alt="Omega Guard" width="40" height="40"&gt;
+
+&lt;!-- as a favicon --&gt;
+&lt;link rel="icon" type="image/svg+xml" href="/assets/logo-animated.svg"&gt;</pre>
+    <p class="note">For a brand lockup in the site header, pair the mark with the wordmark "OMEGA GUARD" in Inter 800, letter-spacing 2px, color <code>#f8fafc</code>. Static fallbacks already in this repo: <code>square-mark.html</code> (icon) and <code>banner.svg</code> (full lockup).</p>
+  </div>
+</div>
+</body>
+</html>
