@@ -1,0 +1,56 @@
+# Omega Guard
+
+> Omega Guard is a brand-protection and consumer-protection service that gives a business a verified trust mark customers can check in one click, and continuously monitors the web for clone and impostor websites that copy the brand. When a fake is confirmed by a human reviewer, Omega Guard preserves the evidence and supplies a ready-to-file takedown packet. It is a product of Omega Point Solutions LLC, a Service-Disabled Veteran-Owned Small Business (SDVOSB).
+
+Primary site: https://omega-guard.omegapointsolutions.com/
+Verify any business (free): https://guard.omegapointsolutions.com/
+Parent company: https://omegapointsolutions.com/
+
+## What Omega Guard does
+
+Omega Guard has two pillars:
+
+1. **Verified Business identity + public trust mark.** A business proves control of its domain and Omega Guard fingerprints the authentic site. Consumers can then check any domain for free and see whether it is a verified member, unknown, or a reported impostor — before they pay, book, or share data.
+
+2. **Active clone and impostor detection.** Omega Guard continuously sweeps the public web for lookalike domains, newly registered copycats, and cloned pages spoofing a member's brand. Confirmed fakes come with preserved evidence and a takedown packet.
+
+## How detection works (signals fused)
+
+- Lookalike-domain permutation analysis (typo/swap/homoglyph domains)
+- Certificate-transparency (CT) log monitoring for newly issued certificates
+- Favicon hashing (MurmurHash3)
+- Structural HTML fuzzy-hashing (simhash) for page-structure similarity
+- Screenshot-level visual similarity (perceptual hashing)
+- Domain age and registrar via RDAP
+- Domain-control verification (DNS-TXT)
+- Hosting IP / ASN reputation
+
+Every candidate is scored, then confirmed by a trained human reviewer before any action. Software assists; it never acts autonomously.
+
+## What a member receives when a fake is confirmed
+
+- An alert
+- A preserved evidence bundle: page capture, WHOIS, certificate, and archive — each hashed with SHA-256 for chain of custody
+- A structured, ready-to-send takedown packet for the registrar and host
+- A member dashboard and ongoing monitoring
+
+## Who it is for
+
+Small and mid-sized businesses whose customers trust them with money and data: medical and dental practices, insurance agencies and carriers, auto dealers, financial and title services, real estate, home-services businesses, and retailers — especially those without an in-house security team. Impersonation is the most-reported type of cybercrime to the FBI's Internet Crime Complaint Center (IC3).
+
+## Privacy and ethics
+
+Omega Guard is privacy-first by design. It analyzes impostor website artifacts, not people, and monitors only on behalf of enrolled, consenting members. It is not a surveillance, profiling, or biometric system, and it does not build profiles of individuals. A human reviews and decides before anything is acted on, every action is logged, and AI involvement is always disclosed.
+
+## Key facts
+
+- Product name: Omega Guard (trademark of Omega Point Solutions LLC)
+- Category: Brand protection, clone-site / website-impersonation detection, business verification
+- Public verification: free, no account required, at guard.omegapointsolutions.com
+- Web sweep cadence: every 30 minutes for verified members
+- Review model: human-in-the-loop on every confirmation
+- Provider: Omega Point Solutions LLC (SDVOSB), https://omegapointsolutions.com
+
+## Contact
+
+To enroll a business or request protection: https://omegapointsolutions.com/
