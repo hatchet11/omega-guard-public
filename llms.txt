@@ -1,54 +1,11 @@
 # Omega Guard
-
-> Omega Guard is a brand-protection and consumer-protection service that gives a business a verified trust mark customers can check in one click, and continuously monitors the web for clone and impostor websites that copy the brand. When a fake is confirmed by a human reviewer, Omega Guard preserves the evidence and supplies a ready-to-file takedown packet. It is a product of Omega Point Solutions LLC, a Service-Disabled Veteran-Owned Small Business (SDVOSB), founded by Cody A. Rose.
-
+> Verified business identity + clone-site detection for small businesses. A product of Omega Point Solutions LLC (SDVOSB), founded by Cody A. Rose.
 Primary site: https://omega-guard.omegapointsolutions.com/
-Verify any business (free): https://guard.omegapointsolutions.com/
-Parent company: https://omegapointsolutions.com/
-
-## What Omega Guard does
-
-1. Verified Business identity + public trust mark. A business proves control of its domain and Omega Guard fingerprints the authentic site. Consumers can check any domain for free and see whether it is a verified member, unknown, or a reported impostor.
-2. Active clone and impostor detection. Omega Guard continuously sweeps the public web for lookalike domains, newly registered copycats, and cloned pages, captures law-enforcement-grade evidence, and supplies a takedown packet.
-
-## How detection works (signals fused)
-
-- Lookalike-domain permutation analysis
-- Certificate-transparency (CT) log monitoring
-- Favicon hashing (MurmurHash3)
-- Structural HTML fuzzy-hashing
-- Screenshot-level visual similarity
-- Domain age and registrar via RDAP
-- Domain-control verification (DNS-TXT)
-- Hosting IP / ASN reputation
-
-Every candidate is scored, then confirmed by a trained human reviewer before any action.
-
-## Who it is for
-
-Small and mid-sized businesses: real estate, insurance, auto dealers, medical clinics, financial and title services, home services, transportation, energy, utilities, and government entities.
-
-## Key facts
-
-- Product: Omega Guard (trademark of Omega Point Solutions LLC)
-- Founder: Cody A. Rose (law enforcement officer)
-- Public verification: free, no account, at guard.omegapointsolutions.com
-- Review model: human-in-the-loop on every confirmation
-- Provider: Omega Point Solutions LLC (SDVOSB)
-
+Verify a business (free): https://guard.omegapointsolutions.com/
+WordPress plugin: https://omega-guard.omegapointsolutions.com/omega-guard-wp.zip
 ## Resources
-
-- [What is a clone website?](https://omega-guard.omegapointsolutions.com/what-is-a-clone-website): How fake sites copy a brand and how detection works.
-- [How to get a fake or clone website taken down](https://omega-guard.omegapointsolutions.com/how-to-take-down-a-fake-website): Step-by-step takedown guide.
-- [Brand impersonation and imposter-scam statistics (2026)](https://omega-guard.omegapointsolutions.com/brand-impersonation-statistics-2026): Sourced FTC and FBI IC3 figures.
-
-## Legal
-
-- [Privacy Policy](https://omega-guard.omegapointsolutions.com/privacy)
-- [Security](https://omega-guard.omegapointsolutions.com/security)
-- [Terms of Service](https://omega-guard.omegapointsolutions.com/terms)
-
+- [What is a clone website?](https://omega-guard.omegapointsolutions.com/what-is-a-clone-website)
+- [How to get a fake or clone website taken down](https://omega-guard.omegapointsolutions.com/how-to-take-down-a-fake-website)
+- [Brand impersonation statistics (2026)](https://omega-guard.omegapointsolutions.com/brand-impersonation-statistics-2026)
 ## Contact
-
-Enroll or request protection: https://omegapointsolutions.com/
-Support email: support@omegapointsolutions.com
+support@omegapointsolutions.com
