@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<!-- Omega Guard - animated landing page. (c) 2026 Omega Point Solutions LLC (proprietary). Omega Guard(TM). -->
+<!-- Omega Guard — animated marketing landing. (c) 2026 Omega Point Solutions LLC (proprietary). Omega Guard(TM). -->
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Omega Guard - Prove you're real. Shut down the fakes.</title>
-<meta name="description" content="Omega Guard verifies your authentic business and continuously finds the clone and impostor sites that copy your brand. We find them, preserve the evidence, and help shut them down. A product of Omega Point Solutions LLC (SDVOSB)." />
+<title>Omega Guard — Prove you're real. Shut down the fakes.</title>
+<meta name="description" content="Omega Guard verifies your authentic business and continuously hunts the clone and impostor websites that copy your brand — finding them, preserving the evidence, and helping shut them down. Brand protection and clone-site detection for small businesses. A product of Omega Point Solutions LLC." />
+<meta name="keywords" content="brand protection, clone site detection, website impersonation, fake website monitoring, business verification, trust mark, lookalike domain detection, impersonation fraud protection, small business cybersecurity, takedown service, phishing site detection, brand impersonation, verify a business" />
+<meta name="author" content="Omega Point Solutions LLC" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<link rel="canonical" href="https://omega-guard.omegapointsolutions.com/" />
+<meta name="theme-color" content="#0b1220" />
+<link rel="icon" href="assets/favicon.png" type="image/png" />
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Omega Guard" />
+<meta property="og:title" content="Omega Guard — Prove you're real. Shut down the fakes." />
+<meta property="og:description" content="Verified business identity + active clone-site detection. We find the fakes impersonating your brand, preserve the evidence, and help take them down." />
+<meta property="og:url" content="https://omega-guard.omegapointsolutions.com" />
+<meta property="og:image" content="https://omega-guard.omegapointsolutions.com/assets/social-preview.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Omega Guard — Prove you're real. Shut down the fakes." />
+<meta name="twitter:description" content="Verified business identity + active clone-site detection, with evidence and takedown support." />
+<meta name="twitter:image" content="https://omega-guard.omegapointsolutions.com/assets/social-preview.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 <style>
   :root{
     --bg:#0b1220; --bg2:#0f1b2e; --acc:#38bdf8; --acc2:#7dd3fc; --accd:#0ea5e9;
-    --red:#f0506e; --yel:#f6c843; --grn:#3fae7a;
+    --red:#f0506e; --yel:#f6c843; --grn:#37d39b;
     --t0:#f8fafc; --t1:#cfe0f0; --t2:#8aa3bd;
     --line:rgba(56,189,248,.16);
   }
@@ -22,7 +39,7 @@
     font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--t1);
     overflow-x:hidden;line-height:1.55;-webkit-font-smoothing:antialiased;
   }
-  /* animated backdrop */
+  /* ── animated backdrop ── */
   .grid{
     position:fixed;inset:-50%;z-index:0;opacity:.5;
     background-image:linear-gradient(var(--line) 1px,transparent 1px),
@@ -34,59 +51,64 @@
   @keyframes gridPan{to{transform:translate(46px,46px)}}
   .glowblob{position:fixed;border-radius:50%;filter:blur(90px);z-index:0;opacity:.42;pointer-events:none}
   .b1{width:520px;height:520px;background:radial-gradient(circle,#155f8a,transparent 70%);top:-160px;right:-120px;animation:drift 18s ease-in-out infinite}
-  .b2{width:420px;height:420px;background:radial-gradient(circle,#5b2740,transparent 70%);bottom:-140px;left:-100px;animation:drift 23s ease-in-out infinite reverse}
+  .b2{width:420px;height:420px;background:radial-gradient(circle,#13324f,transparent 70%);bottom:-140px;left:-100px;animation:drift 23s ease-in-out infinite reverse}
   #fx{position:fixed;inset:0;z-index:1;pointer-events:none}
   @keyframes drift{50%{transform:translate(40px,30px) scale(1.08)}}
 
   .wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:0 24px}
 
-  /* nav */
+  /* ── nav ── */
   nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
   .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.4px;color:var(--t0);font-size:19px}
   .logomark{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--acc),#0c5a86);
     display:grid;place-items:center;box-shadow:0 0 0 1px rgba(56,189,248,.45),0 8px 24px rgba(56,189,248,.32)}
-  .logomark svg{width:24px;height:24px}
-  .navcta{font-size:14px;color:var(--t2);text-decoration:none;border:1px solid var(--line);
+  .logomark svg{width:26px;height:26px}
+  .navlinks{display:flex;align-items:center;gap:8px}
+  .navlink{font:600 13px 'JetBrains Mono',monospace;color:var(--t2);text-decoration:none;padding:9px 12px;border-radius:9px;transition:.2s}
+  .navlink:hover{color:var(--t0)}
+  .navcta{font-size:14px;font-weight:600;color:var(--t0);text-decoration:none;border:1px solid var(--line);
     padding:9px 16px;border-radius:9px;transition:.2s}
-  .navcta:hover{color:var(--t0);border-color:var(--acc);background:rgba(56,189,248,.1)}
+  .navcta:hover{border-color:var(--acc);background:rgba(56,189,248,.1)}
 
-  /* hero */
-  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:48px 0 72px}
+  /* ── hero ── */
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:46px 0 64px}
   .eyebrow{display:inline-flex;align-items:center;gap:8px;font:600 12px/1 'JetBrains Mono',monospace;
     letter-spacing:2px;text-transform:uppercase;color:var(--acc2);
     border:1px solid var(--line);padding:8px 13px;border-radius:99px;background:rgba(56,189,248,.07)}
   .dot{width:7px;height:7px;border-radius:50%;background:var(--grn);box-shadow:0 0 10px var(--grn);animation:blink 1.6s ease-in-out infinite}
   @keyframes blink{50%{opacity:.25}}
-  h1{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-1.4px;color:var(--t0);font-weight:900;margin:20px 0 0}
+  h1{font-size:clamp(34px,5vw,58px);line-height:1.04;letter-spacing:-1.4px;color:var(--t0);font-weight:900;margin:20px 0 0}
   h1 .g{background:linear-gradient(100deg,var(--acc2),var(--accd));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .type{font:600 16px/1 'JetBrains Mono',monospace;color:var(--t2);margin-top:18px;height:20px}
+  .type{font:600 15px/1 'JetBrains Mono',monospace;color:var(--t2);margin-top:18px;height:20px}
   .type b{color:var(--acc2);font-weight:600}
   .cursor{display:inline-block;width:9px;height:17px;background:var(--acc2);margin-left:2px;vertical-align:-2px;animation:blink .9s step-end infinite}
   .sub{font-size:17px;color:var(--t1);margin-top:22px;max-width:540px}
   .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
-  .btn{font-weight:700;font-size:15px;text-decoration:none;padding:14px 24px;border-radius:11px;transition:.2s;display:inline-flex;align-items:center;gap:9px}
+  .btn{font-weight:700;font-size:15px;text-decoration:none;padding:14px 24px;border-radius:11px;transition:.2s;display:inline-flex;align-items:center;gap:9px;cursor:pointer;border:none}
   .btn-p{background:linear-gradient(135deg,var(--acc2),var(--acc));color:#052436;box-shadow:0 10px 30px rgba(56,189,248,.4)}
   .btn-p:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(56,189,248,.55)}
-  .btn-s{color:var(--t0);border:1px solid var(--line)}
+  .btn-s{color:var(--t0);border:1px solid var(--line);background:transparent}
   .btn-s:hover{border-color:var(--acc);background:rgba(56,189,248,.1)}
   .trust{display:flex;gap:22px;margin-top:30px;flex-wrap:wrap}
   .trust div{font:600 12px/1.4 'JetBrains Mono',monospace;color:var(--t2)}
   .trust b{display:block;color:var(--t0);font-size:18px;font-weight:800;font-family:'Inter'}
+
   /* by-the-numbers band */
   .statband{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:34px 0;
-    border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:10px}
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:6px}
   .stat{text-align:center;position:relative}
   .stat:not(:last-child)::after{content:"";position:absolute;right:-9px;top:14%;height:72%;width:1px;background:var(--line)}
   .stat b{display:block;font:900 40px/1 'Inter';letter-spacing:-1.5px;
     background:linear-gradient(180deg,var(--t0),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat b .suf{display:inline;margin:0;font-size:.55em;-webkit-text-fill-color:var(--acc2)}
   .stat span{display:block;margin-top:7px;font:600 11.5px/1.4 'JetBrains Mono',monospace;color:var(--t2);letter-spacing:.3px}
   @media(max-width:860px){.statband{grid-template-columns:1fr 1fr;gap:26px}.stat:nth-child(2)::after{display:none}}
 
-  /* hero animation: scanner */
-  .scanner{position:relative;height:430px;display:grid;place-items:center;perspective:1100px}
-  #radar{position:absolute;width:430px;height:430px;filter:drop-shadow(0 0 18px rgba(56,189,248,.22))}
+  /* ── hero animation: scanner ── */
+  .scanner{position:relative;height:440px;display:grid;place-items:center;perspective:1100px}
+  #radar{position:absolute;width:440px;height:440px;filter:drop-shadow(0 0 18px rgba(56,189,248,.22))}
 
-  .card{position:relative;width:340px;background:linear-gradient(160deg,#102234,#0a1626);
+  .card{position:relative;width:344px;background:linear-gradient(160deg,#102234,#0a1626);
     border:1px solid rgba(56,189,248,.28);border-radius:16px;padding:20px;
     box-shadow:0 24px 60px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.04);overflow:hidden;
     transition:transform .16s cubic-bezier(.2,.7,.2,1);transform-style:preserve-3d;will-change:transform}
@@ -97,7 +119,7 @@
     background-size:260% 260%;animation:sheen 5.5s ease-in-out infinite}
   @keyframes sheen{0%{background-position:130% 0}100%{background-position:-130% 0}}
   .pulsering{position:absolute;inset:-2px;border-radius:18px;border:2px solid var(--red);opacity:0;pointer-events:none;
-    box-shadow:0 0 24px rgba(240,80,110,.5);animation:pr 2.8s ease-out infinite;animation-delay:2.3s}
+    box-shadow:0 0 24px rgba(240,80,110,.5);animation:pr 2.8s ease-out infinite;animation-delay:2.5s}
   @keyframes pr{0%{opacity:0;transform:scale(.93)}14%{opacity:.75}60%,100%{opacity:0;transform:scale(1.14)}}
   .card .scanline{position:absolute;left:0;right:0;height:60px;top:-60px;
     background:linear-gradient(180deg,transparent,rgba(56,189,248,.28),transparent);
@@ -107,61 +129,175 @@
   .chead .tag{font:700 10px/1 'JetBrains Mono',monospace;letter-spacing:1.5px;color:var(--t2);text-transform:uppercase}
   .badge{font:800 10px/1 'JetBrains Mono',monospace;letter-spacing:1px;padding:5px 9px;border-radius:6px;text-transform:uppercase}
   .badge.fraud{color:var(--red);background:rgba(240,80,110,.13);border:1px solid rgba(240,80,110,.4);animation:flashred 2.6s ease-in-out infinite;animation-delay:2.4s}
-  @keyframes flashred{0%,40%{opacity:.2}50%,100%{opacity:1}}
-  .row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.05);opacity:0;animation:rowIn .5s forwards}
-  .row:nth-child(3){animation-delay:.6s}.row:nth-child(4){animation-delay:1.0s}
-  .row:nth-child(5){animation-delay:1.4s}.row:nth-child(6){animation-delay:1.8s}
+  @keyframes flashred{0%,40%{opacity:.25}50%,100%{opacity:1}}
+  .curl{font:500 11px 'JetBrains Mono',monospace;color:var(--t2);margin-bottom:10px;word-break:break-all}
+  .curl .dom{color:var(--red)}
+  .row{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.05);opacity:0;animation:rowIn .5s forwards}
+  .row:nth-child(4){animation-delay:.5s}.row:nth-child(5){animation-delay:.9s}
+  .row:nth-child(6){animation-delay:1.3s}.row:nth-child(7){animation-delay:1.7s}.row:nth-child(8){animation-delay:2.1s}
   @keyframes rowIn{from{opacity:0;transform:translateX(-8px)}to{opacity:1;transform:none}}
   .row .k{font:500 12px 'JetBrains Mono',monospace;color:var(--t2)}
   .row .v{font:600 12px 'JetBrains Mono',monospace;display:flex;align-items:center;gap:7px}
   .ok{color:var(--grn)} .bad{color:var(--red)}
   .ico{width:15px;height:15px;border-radius:50%;display:grid;place-items:center;font-size:9px;font-weight:900}
-  .ico.ok{background:rgba(63,174,122,.16);color:var(--grn)} .ico.bad{background:rgba(240,80,110,.18);color:var(--red)}
+  .ico.ok{background:rgba(55,211,155,.16);color:var(--grn)} .ico.bad{background:rgba(240,80,110,.18);color:var(--red)}
   .verdict{margin-top:14px;padding:11px;border-radius:9px;background:rgba(240,80,110,.1);border:1px solid rgba(240,80,110,.32);
-    font:700 11.5px 'JetBrains Mono',monospace;color:var(--red);text-align:center;opacity:0;animation:rowIn .5s 2.3s forwards;letter-spacing:.4px}
+    font:700 11.5px 'JetBrains Mono',monospace;color:var(--red);text-align:center;opacity:0;animation:rowIn .5s 2.5s forwards;letter-spacing:.4px;line-height:1.5}
 
-  /* sections */
-  section{padding:70px 0}
+  /* ── verticals strip ── */
+  .vstrip{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:48px 0 8px}
+  .vchip{font:600 12px 'JetBrains Mono',monospace;color:var(--t2);border:1px solid var(--line);
+    padding:9px 15px;border-radius:99px;background:rgba(56,189,248,.04);transition:.2s}
+  .vchip:hover{color:var(--t0);border-color:rgba(56,189,248,.4)}
+  .vlabel{text-align:center;font:600 11px 'JetBrains Mono',monospace;letter-spacing:2px;text-transform:uppercase;color:var(--t2);margin-bottom:4px}
+
+  /* ── sections ── */
+  section{padding:66px 0}
   .stitle{font-size:13px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--acc2);font-family:'JetBrains Mono',monospace}
   .sh{font-size:clamp(26px,3.4vw,38px);font-weight:850;color:var(--t0);letter-spacing:-.8px;margin:12px 0 8px;max-width:700px}
   .sp{color:var(--t2);max-width:640px;font-size:16px}
+
+  /* ── how it works ── */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+  .step{background:linear-gradient(160deg,rgba(16,34,52,.7),rgba(10,22,38,.5));border:1px solid var(--line);
+    border-radius:14px;padding:26px;position:relative;overflow:hidden}
+  .step .num{font:900 13px 'JetBrains Mono',monospace;color:#052436;background:var(--acc2);
+    width:30px;height:30px;border-radius:8px;display:grid;place-items:center;margin-bottom:16px}
+  .step h3{color:var(--t0);font-size:18px;font-weight:800;margin-bottom:8px}
+  .step p{color:var(--t2);font-size:14px}
+  .step::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--acc),transparent)}
+
   .feats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
   .feat{background:linear-gradient(160deg,rgba(16,34,52,.7),rgba(10,22,38,.5));border:1px solid var(--line);
     border-radius:14px;padding:24px;transition:.25s}
   .feat:hover{border-color:rgba(56,189,248,.4);transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.35)}
   .fi{width:44px;height:44px;border-radius:11px;background:rgba(56,189,248,.13);display:grid;place-items:center;margin-bottom:16px}
-  .fi svg{width:23px;height:23px;stroke:var(--acc2)}
+  .fi svg{width:23px;height:23px;stroke:var(--acc2);fill:none}
   .feat h3{color:var(--t0);font-size:17px;font-weight:700;margin-bottom:7px}
   .feat p{color:var(--t2);font-size:14px}
 
-  /* how it works strip */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
-  .step{position:relative;padding:22px 18px;border:1px solid var(--line);border-radius:14px;background:rgba(14,28,46,.45)}
-  .step .n{font:800 12px 'JetBrains Mono',monospace;color:#052436;background:var(--acc2);width:26px;height:26px;border-radius:7px;display:grid;place-items:center;margin-bottom:14px}
-  .step h4{color:var(--t0);font-size:15px;font-weight:700;margin-bottom:6px}
-  .step p{color:var(--t2);font-size:13px}
-  @media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
-
-  /* pricing */
+  /* ── membership ── */
   .price{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:42px;max-width:780px}
-  .pc{border:1px solid var(--line);border-radius:16px;padding:28px;background:rgba(14,28,46,.5);position:relative}
+  .pc{border:1px solid var(--line);border-radius:16px;padding:28px;background:rgba(15,27,46,.5);position:relative;display:flex;flex-direction:column}
   .pc.feat-card{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc),0 20px 50px rgba(56,189,248,.2)}
   .pc .ribbon{position:absolute;top:-11px;right:20px;background:var(--acc);color:#052436;font:800 10px 'JetBrains Mono',monospace;
     letter-spacing:1px;padding:5px 11px;border-radius:6px;text-transform:uppercase}
   .pc .tier{font:700 13px 'JetBrains Mono',monospace;letter-spacing:1px;text-transform:uppercase;color:var(--t2)}
-  .pc .amt{font-size:26px;font-weight:900;color:var(--t0);margin:10px 0 2px}
-  .pc .amt span{font-size:14px;color:var(--t2);font-weight:600;display:block;margin-top:4px;font-family:'JetBrains Mono',monospace;letter-spacing:.3px}
+  .pc .amt{font-size:30px;font-weight:900;color:var(--t0);margin:10px 0 2px;letter-spacing:-.5px}
+  .pc .amt span{font-size:14px;color:var(--t2);font-weight:600;display:block;letter-spacing:0;margin-top:4px}
   .pc ul{list-style:none;margin:18px 0 22px}
   .pc li{font-size:14px;color:var(--t1);padding:7px 0 7px 26px;position:relative}
-  .pc li::before{content:"\2713";position:absolute;left:0;color:var(--acc2);font-weight:900}
-  .pc .btn{width:100%;justify-content:center}
+  .pc li::before{content:"✓";position:absolute;left:0;color:var(--acc2);font-weight:900}
+  .pc .btn{width:100%;justify-content:center;margin-top:auto}
 
-  footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:var(--t2);font-size:13px}
+  /* ── final cta band ── */
+  .ctaband{position:relative;z-index:2;max-width:1180px;margin:30px auto 70px;padding:48px 40px;border-radius:22px;
+    background:linear-gradient(135deg,rgba(56,189,248,.12),rgba(15,27,46,.6));border:1px solid rgba(56,189,248,.32);
+    text-align:center;overflow:hidden}
+  .ctaband h2{font-size:clamp(24px,3vw,34px);font-weight:900;color:var(--t0);letter-spacing:-.6px}
+  .ctaband p{color:var(--t1);max-width:560px;margin:12px auto 0;font-size:16px}
+  .ctaband .ctas{justify-content:center}
+
+  /* ── faq ── */
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}
+  .qa{background:linear-gradient(160deg,rgba(16,34,52,.6),rgba(10,22,38,.45));border:1px solid var(--line);border-radius:14px;padding:22px}
+  .qa h3{color:var(--t0);font-size:16px;font-weight:700;margin-bottom:9px;display:flex;gap:9px;align-items:flex-start}
+  .qa h3::before{content:"Q";font:800 12px 'JetBrains Mono',monospace;color:#052436;background:var(--acc2);min-width:22px;height:22px;border-radius:6px;display:grid;place-items:center;margin-top:1px}
+  .qa p{color:var(--t2);font-size:14px}
+  @media(max-width:860px){.faq{grid-template-columns:1fr}}
+
+  footer{border-top:1px solid var(--line);padding:34px 0;text-align:center;color:var(--t2);font-size:13px;line-height:1.8}
   footer b{color:var(--t1)}
+  footer a{color:var(--acc2);text-decoration:none}
   .fadeup{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
   .fadeup.in{opacity:1;transform:none}
-  @media(max-width:860px){.hero{grid-template-columns:1fr;gap:30px}.scanner{height:380px;order:-1}.feats{grid-template-columns:1fr}.price{grid-template-columns:1fr}}
+  @media(max-width:860px){
+    .hero{grid-template-columns:1fr;gap:30px}.scanner{height:400px;order:-1}
+    .steps{grid-template-columns:1fr}.feats{grid-template-columns:1fr}.price{grid-template-columns:1fr}
+    .navlinks .navlink{display:none}
+  }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://omegapointsolutions.com/#org",
+      "name": "Omega Point Solutions LLC",
+      "url": "https://omegapointsolutions.com",
+      "description": "Service-Disabled Veteran-Owned Small Business building fraud-prevention, brand-protection, and investigative-intelligence software.",
+      "slogan": "Verified. Watched. Protected.",
+      "brand": { "@type": "Brand", "name": "Omega Guard" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://omega-guard.omegapointsolutions.com/#website",
+      "url": "https://omega-guard.omegapointsolutions.com/",
+      "name": "Omega Guard",
+      "publisher": { "@id": "https://omegapointsolutions.com/#org" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://omega-guard.omegapointsolutions.com/#service",
+      "serviceType": "Brand protection and clone-website detection",
+      "name": "Omega Guard",
+      "url": "https://omega-guard.omegapointsolutions.com/",
+      "provider": { "@id": "https://omegapointsolutions.com/#org" },
+      "areaServed": "US",
+      "description": "Omega Guard verifies a business's authentic digital identity with a public trust mark and continuously monitors the web for clone and impostor sites that copy the brand — preserving evidence and supplying ready-to-file takedown packets when a fake is confirmed.",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Small and mid-sized businesses: medical and dental practices, insurance agencies, auto dealers, financial and title services, real estate, home services, and retail"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Public business verification",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Anyone can check whether a website belongs to a verified business for free at guard.omegapointsolutions.com."
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://omega-guard.omegapointsolutions.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Omega Guard?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Omega Guard is a brand-protection service that gives a business a verified trust mark customers can check in one click, and continuously monitors the web for clone and impostor websites that copy the brand. When a fake is confirmed, Omega Guard preserves the evidence and provides a ready-to-file takedown packet. It is a product of Omega Point Solutions LLC." }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Omega Guard detect clone or impostor websites?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Omega Guard fuses multiple detection signals: lookalike-domain permutation analysis, certificate-transparency monitoring for newly issued certificates, favicon hashing, structural HTML fuzzy-hashing, screenshot-level visual similarity, domain age via RDAP, domain-control checks, and hosting reputation. A match is scored and confirmed by a human before any action is taken." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do customers verify that my business is real?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Customers visit guard.omegapointsolutions.com, enter a domain, and instantly see whether it is a verified Omega Guard member, unknown, or a reported impostor. Verification is free and requires no account." }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when Omega Guard finds a fake website?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You receive an alert, a preserved evidence bundle (page capture, WHOIS, certificate, and archive, each hashed with SHA-256 for chain of custody), and a structured, ready-to-send takedown packet for the registrar and host." }
+        },
+        {
+          "@type": "Question",
+          "name": "Who is Omega Guard for?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Omega Guard is built for small and mid-sized businesses whose customers trust them with money and data — medical and dental practices, insurance agencies, auto dealers, financial and title services, real estate, home services, and retailers — especially those without an in-house security team." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Omega Guard track or profile people?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Omega Guard is privacy-first by design. It analyzes impostor website artifacts, not people, and monitors only on behalf of enrolled, consenting members. It is not a surveillance, profiling, or biometric system. Software assists, a trained human reviews and decides before any action, and AI involvement is always disclosed." }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="grid"></div><canvas id="fx"></canvas><div class="glowblob b1"></div><div class="glowblob b2"></div>
@@ -169,45 +305,51 @@
 <div class="wrap">
   <nav>
     <div class="brand">
-      <span class="logomark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.4 L19.6 5.5 V12 C19.6 16.6 16 19.7 12 21.6 C8 19.7 4.4 16.6 4.4 12 V5.5 Z" stroke="#eaf6ff" stroke-width="1.5" stroke-linejoin="round"/><text x="12" y="15.6" font-family="Georgia,'Times New Roman',serif" font-size="10" fill="#eaf6ff" text-anchor="middle" font-weight="700">&#937;</text></svg></span>
+      <span class="logomark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2.2 4.4 5v6.1c0 4.9 3.3 8.4 7.6 9.7 4.3-1.3 7.6-4.8 7.6-9.7V5L12 2.2z" stroke="#eaf6ff" stroke-width="1.5" stroke-linejoin="round"/><text x="12" y="15.6" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="900" fill="#7dd3fc">&#937;</text></svg></span>
       Omega Guard
     </div>
-    <a class="navcta" href="https://guard.omegapointsolutions.com">Verify a business</a>
+    <div class="navlinks">
+      <a class="navlink" href="#how">How it works</a>
+      <a class="navlink" href="#what">What you get</a>
+      <a class="navcta" href="https://guard.omegapointsolutions.com">Verify a business</a>
+    </div>
   </nav>
 
   <!-- HERO -->
   <div class="hero">
     <div>
-      <span class="eyebrow"><span class="dot"></span>Live &middot; Omega Point Solutions</span>
-      <h1>Prove you're real.<br><span class="g">Shut down the fakes.</span></h1>
+      <span class="eyebrow"><span class="dot"></span>Live · A product of Omega Point Solutions</span>
+      <h1>Prove you're real.<br>Shut down <span class="g">the fakes.</span></h1>
       <div class="type"><b id="tw"></b><span class="cursor"></span></div>
-      <p class="sub">Omega Guard verifies your authentic business and continuously hunts the clone and impostor sites that copy your brand to take your customers' money. We find them, preserve the evidence, and help get them taken down.</p>
+      <p class="sub">Omega Guard gives your business a trust mark customers can verify in one click — then hunts the web for the clone and impostor sites copying your brand. We find them, preserve the evidence, and help take them down.</p>
       <div class="ctas">
-        <a class="btn btn-p" href="https://omegapointsolutions.com">Apply for early access
+        <a class="btn btn-p" href="https://guard.omegapointsolutions.com">Verify a business
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#052436" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-        <a class="btn btn-s" href="https://guard.omegapointsolutions.com">Verify a business</a>
+        <a class="btn btn-s" href="#how">See how it works</a>
       </div>
       <div class="trust">
-        <div><b>DNS-verified</b>domain control</div>
-        <div><b>Human-reviewed</b>before any action</div>
-        <div><b>SDVOSB</b>Omega Point Solutions</div>
+        <div><b>1-click</b>public verification</div>
+        <div><b>24/7</b>impostor monitoring</div>
+        <div><b>Human</b>reviewed before action</div>
       </div>
     </div>
 
-    <!-- scanner animation: impostor sweep -->
+    <!-- scanner animation -->
     <div class="scanner">
       <canvas id="radar"></canvas>
       <div class="card" id="card">
         <div class="scanline"></div>
         <div class="chead">
-          <span class="tag">DETECTION &middot; IMPOSTOR SITE</span>
-          <span class="badge fraud">&#9888; Clone</span>
+          <span class="tag">CLONE DETECTION · LIVE SWEEP</span>
+          <span class="badge fraud">⚠ Impostor</span>
         </div>
-        <div class="row"><span class="k">Look-alike domain</span><span class="v bad">FLAGGED <span class="ico bad">&#10005;</span></span></div>
-        <div class="row"><span class="k">Logo fingerprint match</span><span class="v bad">98% <span class="ico bad">&#10005;</span></span></div>
-        <div class="row"><span class="k">Domain age</span><span class="v bad">4 DAYS <span class="ico bad">&#10005;</span></span></div>
-        <div class="row"><span class="k">Hosting vs. member</span><span class="v bad">MISMATCH <span class="ico bad">&#10005;</span></span></div>
-        <div class="verdict">&#9888; CONFIRMED IMPOSTOR &middot; EVIDENCE PRESERVED &middot; PACKET READY</div>
+        <div class="curl">match · <span class="dom">your-brand-llc-secure.com</span></div>
+        <div class="row"><span class="k">Favicon hash (mmh3)</span><span class="v bad">MATCH <span class="ico bad">!</span></span></div>
+        <div class="row"><span class="k">Structural + visual fuzzy</span><span class="v bad">0.94 SIM <span class="ico bad">!</span></span></div>
+        <div class="row"><span class="k">Domain age · RDAP</span><span class="v bad">3 DAYS <span class="ico bad">✕</span></span></div>
+        <div class="row"><span class="k">Domain control (DNS-TXT)</span><span class="v bad">ABSENT <span class="ico bad">✕</span></span></div>
+        <div class="row"><span class="k">Hosting ASN reputation</span><span class="v bad">FLAGGED <span class="ico bad">✕</span></span></div>
+        <div class="verdict">⚠ CLONE OF VERIFIED MEMBER<br>EVIDENCE PRESERVED · TAKEDOWN PACKET READY</div>
         <div class="pulsering"></div>
       </div>
     </div>
@@ -216,95 +358,175 @@
 
 <!-- BY THE NUMBERS -->
 <div class="wrap"><div class="statband fadeup">
-  <div class="stat"><b data-to="30">0</b><span>min &middot; continuous sweep</span></div>
-  <div class="stat"><b data-to="4">0</b><span>detection signal sources</span></div>
-  <div class="stat"><b data-to="256">0</b><span>bit evidence hashing</span></div>
-  <div class="stat"><b data-to="100" data-suf="%">0</b><span>consent-scoped, members only</span></div>
+  <div class="stat"><b data-to="1">0</b><span>click · customer verification</span></div>
+  <div class="stat"><b data-to="6">0</b><span>detection signals fused</span></div>
+  <div class="stat"><b data-to="30">0</b><span>min · web sweep cadence</span></div>
+  <div class="stat"><b data-to="100">0<span class="suf">%</span></b><span>human-reviewed before action</span></div>
 </div></div>
 
-<!-- WHAT IT DOES -->
-<section id="how" class="wrap fadeup">
-  <span class="stitle">What members get</span>
-  <h2 class="sh">Verify the real business. Find and shut down the fakes.</h2>
-  <p class="sp">Two jobs, one membership: prove your business is authentic to the customers about to pay you, and continuously hunt the look-alike sites built to impersonate you.</p>
-  <div class="feats">
-    <div class="feat">
-      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
-      <h3>Verified Business registry</h3><p>We confirm your authentic domains, phone numbers, and approved payment channels, then issue a public trust mark any consumer can check before they pay.</p>
-    </div>
-    <div class="feat">
-      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="8" cy="14" r="4"/><path d="M11 11l8-8M16 3h4v4M13 6l2 2"/></svg></div>
-      <h3>Domain-control verification</h3><p>A DNS-TXT challenge proves a member actually controls each domain before it is ever marked verified. No self-asserted claims.</p>
-    </div>
-    <div class="feat">
-      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 12l6-3M12 3v4M3 12h4"/></svg></div>
-      <h3>Clone &amp; impostor monitoring</h3><p>Continuous sweeps across DNS permutations, certificate-transparency logs, passive DNS, and brand search surface the look-alikes the moment they appear.</p>
-    </div>
-    <div class="feat">
-      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 13l2 2 4-4"/></svg></div>
-      <h3>AI-assisted triage</h3><p>Every candidate is scored and reviewed. The AI looks at the site artifact, never at people, and a trained human confirms before anything is acted on. AI involvement is always disclosed.</p>
-    </div>
-    <div class="feat">
-      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div>
-      <h3>Evidence &amp; chain of custody</h3><p>DOM, WHOIS, certificate, and archive snapshots are captured and SHA-256 hashed, with a full custody log, so a confirmed impostor stands up to a takedown or a referral.</p>
-    </div>
-    <div class="feat">
-      <div class="fi"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M6 8a6 6 0 0112 0c0 7 3 7 3 9H3c0-2 3-2 3-9z"/><path d="M10 21a2 2 0 004 0"/></svg></div>
-      <h3>Alerts &amp; takedown packets</h3><p>When an impostor is confirmed, the member is alerted and handed a ready-to-file takedown packet with the evidence already assembled.</p>
+<!-- VERTICALS -->
+<div class="wrap fadeup">
+  <div class="vstrip" style="flex-direction:column;align-items:center;gap:14px">
+    <div class="vlabel">Built for brands customers trust with their money</div>
+    <div class="vstrip" style="padding:0">
+      <span class="vchip">Medical &amp; Dental</span>
+      <span class="vchip">Insurance</span>
+      <span class="vchip">Auto Dealers</span>
+      <span class="vchip">Financial &amp; Title</span>
+      <span class="vchip">Real Estate</span>
+      <span class="vchip">Home Services</span>
+      <span class="vchip">Retail</span>
     </div>
   </div>
-</section>
+</div>
 
 <!-- HOW IT WORKS -->
-<section class="wrap fadeup">
+<section id="how" class="wrap fadeup">
   <span class="stitle">How it works</span>
-  <h2 class="sh">From enrollment to takedown.</h2>
+  <h2 class="sh">Verify. Monitor. Respond.</h2>
+  <p class="sp">Three steps from "anyone can fake us" to "fakes get caught and removed."</p>
   <div class="steps">
-    <div class="step"><div class="n">1</div><h4>Enroll &amp; verify</h4><p>Add your real domains and pass the DNS-TXT control check to earn your verified trust mark.</p></div>
-    <div class="step"><div class="n">2</div><h4>Continuous sweep</h4><p>We watch the public web for look-alike domains, certificates, and listings cloning your brand.</p></div>
-    <div class="step"><div class="n">3</div><h4>Review &amp; confirm</h4><p>Candidates are scored, a human reviews the evidence, and only confirmed impostors move forward.</p></div>
-    <div class="step"><div class="n">4</div><h4>Preserve &amp; act</h4><p>Evidence is captured and hashed, you are alerted, and a takedown packet is ready to file.</p></div>
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Verify</h3>
+      <p>You prove control of your domain and we fingerprint your real site. Customers get a public verification page they can check before they pay, book, or share anything.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Monitor</h3>
+      <p>We continuously sweep for lookalike domains and cloned pages using domain permutations, certificate-transparency feeds, and visual + structural fingerprint matching.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Respond</h3>
+      <p>When a fake is confirmed by a human, you get an alert, a preserved evidence bundle, and a ready-to-file takedown packet for the registrar and host.</p>
+    </div>
   </div>
 </section>
 
-<!-- PRICING / ACCESS -->
+<!-- WHAT YOU GET / FEATURES -->
+<section id="what" class="wrap fadeup">
+  <span class="stitle">What you get</span>
+  <h2 class="sh">Verified identity, and a watchtower for your brand.</h2>
+  <p class="sp">Privacy-first by design — we analyze impostor artifacts, never people.</p>
+  <div class="feats">
+    <div class="feat">
+      <div class="fi"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 2.5 5 5v6c0 4.6 3.1 7.8 7 9 3.9-1.2 7-4.4 7-9V5l-7-2.5z"/><path d="M9 12l2 2 4-4.5"/></svg></div>
+      <h3>Verified trust mark</h3><p>A public, one-click verification page that proves a site is the real you — and flags the ones that aren't.</p>
+    </div>
+    <div class="feat">
+      <div class="fi"><svg viewBox="0 0 24 24" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></div>
+      <h3>Clone &amp; impostor detection</h3><p>Lookalike domains, newly registered copycats, and cloned pages — surfaced from permutation analysis and certificate-transparency monitoring.</p>
+    </div>
+    <div class="feat">
+      <div class="fi"><svg viewBox="0 0 24 24" stroke-width="1.8"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><path d="M13 17h8M17 13v8"/></svg></div>
+      <h3>Visual + structural match</h3><p>Favicon hashing, structural fuzzy-hashing, and screenshot-level visual similarity catch copies that simple keyword scans miss.</p>
+    </div>
+    <div class="feat">
+      <div class="fi"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M9 13l2 2 4-4"/></svg></div>
+      <h3>Evidence &amp; chain of custody</h3><p>Page capture, WHOIS, certificate, and archive — each hashed with SHA-256 and preserved the moment a fake is confirmed.</p>
+    </div>
+    <div class="feat">
+      <div class="fi"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M4 5h16v4H4zM4 13h10v6H4z"/><path d="M18 14l2 2 3-3"/></svg></div>
+      <h3>Takedown packets</h3><p>A structured, ready-to-send complaint for the registrar and host — generated automatically on confirmation, so you act fast.</p>
+    </div>
+    <div class="feat">
+      <div class="fi"><svg viewBox="0 0 24 24" stroke-width="1.8"><path d="M12 3a9 9 0 100 18 9 9 0 000-18z"/><path d="M12 8v4l3 2"/></svg></div>
+      <h3>Human-in-the-loop</h3><p>Software assists; a trained reviewer confirms before any action. No person profiling, full audit trail, and AI involvement always disclosed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
 <section class="wrap fadeup">
-  <span class="stitle">Founding-member access</span>
-  <h2 class="sh">Two ways to protect your brand.</h2>
-  <p class="sp">Omega Guard is in early access. Founding members help shape the product and lock in early pricing.</p>
+  <span class="stitle">Get protected</span>
+  <h2 class="sh">Check any business free. Protect yours with a membership.</h2>
   <div class="price">
     <div class="pc">
-      <div class="tier">Verified Business</div>
-      <div class="amt">Early access<span>founding-member pricing</span></div>
-      <ul><li>Verified Business status</li><li>Public trust mark consumers can check</li><li>DNS-TXT domain-control verification</li><li>Listing in the public registry</li></ul>
-      <a class="btn btn-s" href="https://omegapointsolutions.com">Apply for access</a>
+      <div class="tier">Public verify</div>
+      <div class="amt">Free<span>for anyone, any time</span></div>
+      <ul>
+        <li>Check any domain instantly</li>
+        <li>See verified · unknown · reported</li>
+        <li>No account required</li>
+      </ul>
+      <a class="btn btn-s" href="https://guard.omegapointsolutions.com">Verify a business</a>
     </div>
     <div class="pc feat-card">
-      <div class="ribbon">Most protection</div>
-      <div class="tier">Guard</div>
-      <div class="amt">Early access<span>founding-member pricing</span></div>
-      <ul><li>Everything in Verified Business</li><li>Continuous clone &amp; impostor monitoring</li><li>Evidence capture &amp; chain of custody</li><li>Member alerts on confirmed impostors</li><li>Ready-to-file takedown packets</li></ul>
-      <a class="btn btn-p" href="https://omegapointsolutions.com">Apply for access &rarr;</a>
+      <div class="ribbon">Business</div>
+      <div class="tier">Business membership</div>
+      <div class="amt">Brand protection<span>verified identity + active monitoring</span></div>
+      <ul>
+        <li>Verified trust mark for your site</li>
+        <li>24/7 clone &amp; impostor monitoring</li>
+        <li>Evidence with chain of custody</li>
+        <li>Ready-to-file takedown packets</li>
+        <li>Member dashboard &amp; alerts</li>
+      </ul>
+      <a class="btn btn-p" href="https://omegapointsolutions.com">Apply for protection →</a>
     </div>
   </div>
 </section>
 
+<!-- FAQ -->
+<section id="faq" class="wrap fadeup">
+  <span class="stitle">Questions, answered</span>
+  <h2 class="sh">What businesses ask before they enroll.</h2>
+  <div class="faq">
+    <div class="qa">
+      <h3>What is Omega Guard?</h3>
+      <p>Omega Guard is a brand-protection service that gives your business a verified trust mark customers can check in one click, and continuously monitors the web for clone and impostor sites copying your brand. When a fake is confirmed, we preserve the evidence and hand you a ready-to-file takedown packet.</p>
+    </div>
+    <div class="qa">
+      <h3>How does it detect clone or impostor websites?</h3>
+      <p>We fuse multiple signals: lookalike-domain permutations, certificate-transparency monitoring, favicon hashing, structural HTML fuzzy-hashing, screenshot-level visual similarity, domain age via RDAP, domain-control checks, and hosting reputation. Every match is scored and confirmed by a human.</p>
+    </div>
+    <div class="qa">
+      <h3>How do my customers verify my business?</h3>
+      <p>They visit guard.omegapointsolutions.com, enter a domain, and instantly see whether it's a verified Omega Guard member, unknown, or a reported impostor. It's free and needs no account — a trust signal you can put on your site, invoices, and emails.</p>
+    </div>
+    <div class="qa">
+      <h3>What happens when you find a fake?</h3>
+      <p>You get an alert, a preserved evidence bundle — page capture, WHOIS, certificate, and archive, each hashed with SHA-256 for chain of custody — and a structured takedown packet ready to send to the registrar and host.</p>
+    </div>
+    <div class="qa">
+      <h3>Who is it for?</h3>
+      <p>Small and mid-sized businesses whose customers trust them with money and data: medical and dental practices, insurance, auto dealers, financial and title services, real estate, home services, and retail — especially teams without in-house security.</p>
+    </div>
+    <div class="qa">
+      <h3>Do you track or profile people?</h3>
+      <p>No. Omega Guard is privacy-first. We analyze impostor website artifacts, not people, and monitor only for enrolled, consenting members. It's not surveillance, profiling, or biometrics. Software assists; a trained human decides before any action, and AI involvement is always disclosed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="ctaband fadeup">
+  <h2>Impersonation is the most-reported cybercrime in the country.</h2>
+  <p>Stop being an easy target. Verify your business and put a watchtower over your brand.</p>
+  <div class="ctas">
+    <a class="btn btn-p" href="https://omegapointsolutions.com">Apply for protection
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#052436" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <a class="btn btn-s" href="https://guard.omegapointsolutions.com">Verify a business</a>
+  </div>
+</div>
+
 <footer class="wrap">
-  <b>Omega Guard&trade;</b> &middot; a product of <b>Omega Point Solutions LLC</b>, a Service-Disabled Veteran-Owned Small Business.<br>
-  Brand and consumer protection for enrolled, consenting members only. Not a surveillance, profiling, or biometric system. Software assists; a trained human reviews and decides before any action.<br>
-  &copy; 2026 Omega Point Solutions LLC. "Omega Guard" is a trademark of Omega Point Solutions LLC.
+  <b>Omega Guard™</b> — verified business identity &amp; clone-site detection.<br>
+  A product of <b><a href="https://omegapointsolutions.com">Omega Point Solutions LLC</a></b> (SDVOSB). Privacy-first · human-in-the-loop · evidence preserved with SHA-256 chain of custody.<br>
+  © 2026 Omega Point Solutions LLC. "Omega Guard" is a trademark of Omega Point Solutions LLC.
 </footer>
 
 <script>
-  // typewriter - real detection process lines
-  const lines=["Sweeping DNS permutations…","Scanning certificate-transparency logs…","Matching logo & content fingerprint…","Impostor found · preserving evidence…","Takedown packet ready…"];
+  // typewriter — real process steps
+  const lines=["Sweeping permutations · certificate transparency…","Match · favicon + structural + visual hash…","Domain age 3 days · no DNS control…","Evidence preserved · takedown packet ready…"];
   let li=0,ci=0,del=false,el=document.getElementById('tw');
   (function tw(){
     const s=lines[li];
     el.textContent=del?s.slice(0,ci--):s.slice(0,ci++);
     if(!del&&ci===s.length+1){del=true;setTimeout(tw,1300);return;}
     if(del&&ci===0){del=false;li=(li+1)%lines.length;}
-    setTimeout(tw,del?28:55);
+    setTimeout(tw,del?26:52);
   })();
   // reveal on scroll
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
@@ -327,54 +549,44 @@
       requestAnimationFrame(loop);})();
   })();
 
-  // ===== impostor sweep: verified hub + scanned domains + one clone =====
+  // ===== radar sweep — web monitoring, one contact flares RED = clone found =====
   (function(){
     const c=document.getElementById('radar');if(!c)return;
-    const x=c.getContext('2d'),S=430,dpr=Math.min(devicePixelRatio||1,2);
+    const x=c.getContext('2d'),S=440,dpr=Math.min(devicePixelRatio||1,2);
     c.width=S*dpr;c.height=S*dpr;c.style.width=S+'px';c.style.height=S+'px';x.scale(dpr,dpr);
-    const cx=S/2,cy=S/2,R=S/2-10;
-    // candidate domains around the verified brand; one is the confirmed clone
-    const nodes=[{a:0.5,r:.5},{a:1.4,r:.78},{a:2.3,r:.45},{a:3.1,r:.84,clone:1},{a:3.9,r:.6},{a:4.7,r:.82},{a:5.6,r:.52}];
-    nodes.forEach(n=>n.g=0);
+    const cx=S/2,cy=S/2,R=S/2-8;
+    const blips=[{a:.6,r:.55,red:0,g:0},{a:2.0,r:.8,red:0,g:0},{a:3.55,r:.42,red:1,g:0},{a:4.9,r:.66,red:0,g:0},{a:1.3,r:.86,red:0,g:0},{a:5.6,r:.34,red:0,g:0}];
     let ang=0;
     (function loop(){x.clearRect(0,0,S,S);
-      x.strokeStyle='rgba(56,189,248,.14)';x.lineWidth=1;
+      x.strokeStyle='rgba(56,189,248,.15)';x.lineWidth=1;
       for(let i=1;i<=3;i++){x.beginPath();x.arc(cx,cy,R*i/3,0,6.283);x.stroke();}
       x.beginPath();x.moveTo(cx-R,cy);x.lineTo(cx+R,cy);x.moveTo(cx,cy-R);x.lineTo(cx,cy+R);x.stroke();
-      // sweep trail
       x.save();x.translate(cx,cy);
-      for(let k=0;k<46;k++){const aa=ang-k*0.028;x.strokeStyle='rgba(56,189,248,'+(.18*(1-k/46))+')';
+      for(let k=0;k<46;k++){const aa=ang-k*0.028;x.strokeStyle='rgba(56,189,248,'+(.20*(1-k/46))+')';
         x.beginPath();x.moveTo(0,0);x.lineTo(Math.cos(aa)*R,Math.sin(aa)*R);x.stroke();}
-      x.strokeStyle='rgba(125,211,252,.9)';x.lineWidth=2;
+      x.strokeStyle='rgba(150,220,255,.85)';x.lineWidth=2;
       x.beginPath();x.moveTo(0,0);x.lineTo(Math.cos(ang)*R,Math.sin(ang)*R);x.stroke();
       x.restore();
-      // faint links from hub to each candidate
-      for(const n of nodes){const nx=cx+Math.cos(n.a)*R*n.r,ny=cy+Math.sin(n.a)*R*n.r;
-        x.strokeStyle='rgba(56,189,248,.10)';x.lineWidth=1;x.beginPath();x.moveTo(cx,cy);x.lineTo(nx,ny);x.stroke();}
-      // candidate nodes flare as the beam passes
-      for(const n of nodes){const nx=cx+Math.cos(n.a)*R*n.r,ny=cy+Math.sin(n.a)*R*n.r;
-        let d=Math.abs(((ang-n.a)%6.283+6.283)%6.283);if(d>3.1416)d=6.283-d;
-        n.g=Math.max(n.g*0.95,Math.max(0,1-d*3.2));const col=n.clone?'240,80,110':'56,189,248';
-        x.beginPath();x.arc(nx,ny,2.6+n.g*3,0,6.283);x.fillStyle='rgba('+col+','+(.35+n.g*.65)+')';x.fill();
-        if(n.g>.25){x.beginPath();x.arc(nx,ny,8+n.g*12,0,6.283);x.strokeStyle='rgba('+col+','+(n.g*.5)+')';x.lineWidth=1.5;x.stroke();}}
-      // verified brand hub at center (green)
-      x.beginPath();x.arc(cx,cy,7,0,6.283);x.fillStyle='rgba(63,174,122,.95)';x.fill();
-      x.beginPath();x.arc(cx,cy,12,0,6.283);x.strokeStyle='rgba(63,174,122,.4)';x.lineWidth=1.5;x.stroke();
-      ang+=0.016;requestAnimationFrame(loop);})();
+      for(const b of blips){const bx=cx+Math.cos(b.a)*R*b.r,by=cy+Math.sin(b.a)*R*b.r;
+        let d=Math.abs(((ang-b.a)%6.283+6.283)%6.283);if(d>3.1416)d=6.283-d;
+        b.g=Math.max(b.g*0.95,Math.max(0,1-d*3.2));const col=b.red?'240,80,110':'56,189,248';
+        x.beginPath();x.arc(bx,by,2.5+b.g*3,0,6.283);x.fillStyle='rgba('+col+','+(.3+b.g*.7)+')';x.fill();
+        if(b.g>.25){x.beginPath();x.arc(bx,by,8+b.g*12,0,6.283);x.strokeStyle='rgba('+col+','+(b.g*.5)+')';x.lineWidth=1.5;x.stroke();}}
+      ang+=0.017;requestAnimationFrame(loop);})();
   })();
 
-  // ===== 3D parallax on the detection card =====
+  // ===== 3D parallax on the case card =====
   (function(){const card=document.getElementById('card'),scn=document.querySelector('.scanner');if(!card)return;
     scn.addEventListener('pointermove',e=>{const r=scn.getBoundingClientRect();
       const px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;
       card.style.transform='rotateY('+(px*11)+'deg) rotateX('+(-py*11)+'deg) translateZ(22px)';});
     scn.addEventListener('pointerleave',()=>{card.style.transform='';});})();
 
-  // ===== count-up stats (supports data-pre, data-suf, data-dec) =====
+  // ===== count-up stats =====
   (function(){const ob=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;
-    const el=e.target,to=parseFloat(el.dataset.to),dec=+(el.dataset.dec||0),pre=el.dataset.pre||'',suf=el.dataset.suf||'';let s=null;
+    const el=e.target,to=parseFloat(el.dataset.to),dec=+(el.dataset.dec||0),pre=el.dataset.pre||'';let s=null;
     (function step(ts){if(!s)s=ts;const p=Math.min((ts-s)/1100,1),v=to*(1-Math.pow(1-p,3));
-      el.textContent=pre+(dec?v.toFixed(dec):Math.round(v))+suf;if(p<1)requestAnimationFrame(step);})(performance.now());
+      el.firstChild.textContent=pre+(dec?v.toFixed(dec):Math.round(v));if(p<1)requestAnimationFrame(step);})(performance.now());
     ob.unobserve(el);}),{threshold:.6});
     document.querySelectorAll('.stat b').forEach(n=>ob.observe(n));})();
 </script>
