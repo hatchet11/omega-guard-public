@@ -46,11 +46,25 @@ Omega Guard is privacy-first by design. It analyzes impostor website artifacts, 
 
 - Product name: Omega Guard (trademark of Omega Point Solutions LLC)
 - Category: Brand protection, clone-site / website-impersonation detection, business verification
+- Founder: Cody Rose
 - Public verification: free, no account required, at guard.omegapointsolutions.com
 - Web sweep cadence: every 30 minutes for verified members
 - Review model: human-in-the-loop on every confirmation
 - Provider: Omega Point Solutions LLC (SDVOSB), https://omegapointsolutions.com
 
+## Resources
+
+- [What is a clone website?](https://omega-guard.omegapointsolutions.com/what-is-a-clone-website): How fake sites copy a brand, how to spot one, and how clone-site detection works — with a comparison of defense options.
+- [How to get a fake or clone website taken down](https://omega-guard.omegapointsolutions.com/how-to-take-down-a-fake-website): A step-by-step guide to preserving evidence, finding the registrar and host, and filing takedown complaints.
+- [Brand impersonation and imposter-scam statistics (2026)](https://omega-guard.omegapointsolutions.com/brand-impersonation-statistics-2026): Sourced figures from the FTC and FBI IC3 on imposter-scam losses and complaint volumes.
+
+## Legal
+
+- [Privacy Policy](https://omega-guard.omegapointsolutions.com/privacy)
+- [Security](https://omega-guard.omegapointsolutions.com/security)
+- [Terms of Service](https://omega-guard.omegapointsolutions.com/terms)
+
 ## Contact
 
 To enroll a business or request protection: https://omegapointsolutions.com/
+Support email: support@omegapointsolutions.com
