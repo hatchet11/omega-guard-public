@@ -5,7 +5,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Omega Guard — Prove you're real. Shut down the fakes.</title>
-<meta name="description" content="Omega Guard verifies your authentic business and continuously hunts the clone and impostor websites that copy your brand — finding them, preserving the evidence, and helping shut them down. Brand protection and clone-site detection for small businesses. A product of Omega Point Solutions LLC." />
+<meta name="description" content="Verified business identity and clone-site detection for small businesses. Omega Guard finds the fakes impersonating your brand and helps take them down." />
 <meta name="keywords" content="brand protection, clone site detection, website impersonation, fake website monitoring, business verification, trust mark, lookalike domain detection, impersonation fraud protection, small business cybersecurity, takedown service, phishing site detection, brand impersonation, verify a business" />
 <meta name="author" content="Omega Point Solutions LLC" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -17,12 +17,16 @@
 <meta property="og:site_name" content="Omega Guard" />
 <meta property="og:title" content="Omega Guard — Prove you're real. Shut down the fakes." />
 <meta property="og:description" content="Verified business identity + active clone-site detection. We find the fakes impersonating your brand, preserve the evidence, and help take them down." />
-<meta property="og:url" content="https://omega-guard.omegapointsolutions.com" />
+<meta property="og:url" content="https://omega-guard.omegapointsolutions.com/" />
 <meta property="og:image" content="https://omega-guard.omegapointsolutions.com/assets/social-preview.png" />
+<meta property="og:image:width" content="1280" />
+<meta property="og:image:height" content="640" />
+<meta property="og:image:alt" content="Omega Guard — verified business identity and clone-site detection" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Omega Guard — Prove you're real. Shut down the fakes." />
 <meta name="twitter:description" content="Verified business identity + active clone-site detection, with evidence and takedown support." />
 <meta name="twitter:image" content="https://omega-guard.omegapointsolutions.com/assets/social-preview.png" />
+<meta name="twitter:image:alt" content="Omega Guard — verified business identity and clone-site detection" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -198,6 +202,13 @@
   .ctaband p{color:var(--t1);max-width:560px;margin:12px auto 0;font-size:16px}
   .ctaband .ctas{justify-content:center}
 
+  /* ── glossary ── */
+  .gloss{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}
+  .term{background:linear-gradient(160deg,rgba(16,34,52,.6),rgba(10,22,38,.45));border:1px solid var(--line);border-radius:14px;padding:22px}
+  .term h3{color:var(--acc2);font:700 14px 'JetBrains Mono',monospace;letter-spacing:.3px;margin-bottom:9px}
+  .term p{color:var(--t2);font-size:14px}
+  @media(max-width:860px){.gloss{grid-template-columns:1fr}}
+
   /* ── faq ── */
   .faq{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}
   .qa{background:linear-gradient(160deg,rgba(16,34,52,.6),rgba(10,22,38,.45));border:1px solid var(--line);border-radius:14px;padding:22px}
@@ -225,9 +236,32 @@
       "@type": "Organization",
       "@id": "https://omegapointsolutions.com/#org",
       "name": "Omega Point Solutions LLC",
+      "legalName": "Omega Point Solutions LLC",
       "url": "https://omegapointsolutions.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://omega-guard.omegapointsolutions.com/assets/favicon.png"
+      },
+      "image": "https://omega-guard.omegapointsolutions.com/assets/social-preview.png",
       "description": "Service-Disabled Veteran-Owned Small Business building fraud-prevention, brand-protection, and investigative-intelligence software.",
       "slogan": "Verified. Watched. Protected.",
+      "foundingDate": "2026",
+      "knowsAbout": [
+        "Brand protection",
+        "Clone and impostor website detection",
+        "Business identity verification",
+        "Fraud prevention",
+        "Domain abuse and takedown"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://omegapointsolutions.com/",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://github.com/hatchet11"
+      ],
       "brand": { "@type": "Brand", "name": "Omega Guard" }
     },
     {
@@ -236,7 +270,61 @@
       "url": "https://omega-guard.omegapointsolutions.com/",
       "name": "Omega Guard",
       "publisher": { "@id": "https://omegapointsolutions.com/#org" },
-      "inLanguage": "en-US"
+      "inLanguage": "en-US",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://guard.omegapointsolutions.com/verify?domain={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://omega-guard.omegapointsolutions.com/#webpage",
+      "url": "https://omega-guard.omegapointsolutions.com/",
+      "name": "Omega Guard — Prove you're real. Shut down the fakes.",
+      "isPartOf": { "@id": "https://omega-guard.omegapointsolutions.com/#website" },
+      "about": { "@id": "https://omega-guard.omegapointsolutions.com/#app" },
+      "inLanguage": "en-US",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["h1", ".sub", "#faq"]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://omega-guard.omegapointsolutions.com/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Omega Point Solutions", "item": "https://omegapointsolutions.com" },
+        { "@type": "ListItem", "position": 2, "name": "Omega Guard", "item": "https://omega-guard.omegapointsolutions.com/" }
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://omega-guard.omegapointsolutions.com/#app",
+      "name": "Omega Guard",
+      "applicationCategory": "SecurityApplication",
+      "operatingSystem": "Web-based",
+      "url": "https://omega-guard.omegapointsolutions.com/",
+      "publisher": { "@id": "https://omegapointsolutions.com/#org" },
+      "description": "Omega Guard verifies a business's authentic digital identity with a public trust mark and continuously monitors the web for clone and impostor sites, preserving SHA-256 hashed evidence and supplying ready-to-file takedown packets when a fake is confirmed.",
+      "featureList": [
+        "Public one-click business verification trust mark",
+        "Lookalike-domain permutation monitoring",
+        "Certificate-transparency log monitoring",
+        "Favicon and structural HTML fuzzy-hashing",
+        "Visual screenshot similarity detection",
+        "SHA-256 chain-of-custody evidence preservation",
+        "Ready-to-file registrar and host takedown packets"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free public business verification at guard.omegapointsolutions.com"
+      }
     },
     {
       "@type": "Service",
@@ -468,6 +556,20 @@
   </div>
 </section>
 
+<!-- GLOSSARY -->
+<section id="glossary" class="wrap fadeup">
+  <span class="stitle">Brand-protection terms, defined</span>
+  <h2 class="sh">The language of clone-site detection, in plain English.</h2>
+  <div class="gloss">
+    <div class="term"><h3>Clone / impostor site</h3><p>A near-identical copy of a real business's website — same look, layout, and branding — built to deceive customers into paying or sharing data.</p></div>
+    <div class="term"><h3>Lookalike domain</h3><p>A web address that mimics a real one through typos, swapped characters, or extra words (like "-secure" or "-llc") to pass for the genuine business.</p></div>
+    <div class="term"><h3>Certificate transparency</h3><p>A public log of every SSL certificate issued on the web. Monitoring it reveals a fake version of your domain the moment someone sets one up.</p></div>
+    <div class="term"><h3>Chain of custody</h3><p>A documented, tamper-evident record of when and how evidence was collected — so a takedown request or legal complaint holds up.</p></div>
+    <div class="term"><h3>Takedown packet</h3><p>A structured, ready-to-send complaint with the evidence a domain registrar or web host needs to remove a fraudulent site quickly.</p></div>
+    <div class="term"><h3>Trust mark</h3><p>A public verification badge customers can check to confirm a website really belongs to the verified business — before they pay or share data.</p></div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section id="faq" class="wrap fadeup">
   <span class="stitle">Questions, answered</span>
@@ -502,8 +604,8 @@
 
 <!-- FINAL CTA -->
 <div class="ctaband fadeup">
-  <h2>Impersonation is the most-reported cybercrime in the country.</h2>
-  <p>Stop being an easy target. Verify your business and put a watchtower over your brand.</p>
+  <h2>Americans reported losing $3.5&nbsp;billion to imposter scams in 2025.</h2>
+  <p>Imposter scams were the most-reported fraud to the U.S. Federal Trade Commission — and most start with a fake site or message copying a real business. Verify yours and put a watchtower over your brand. <a href="https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-data-show-people-reported-losing-3-point-5-billion-imposter-scams-2025" rel="nofollow noopener" target="_blank">Source: FTC, June&nbsp;2026</a>.</p>
   <div class="ctas">
     <a class="btn btn-p" href="https://omegapointsolutions.com">Apply for protection
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#052436" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
